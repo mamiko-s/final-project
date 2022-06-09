@@ -1,0 +1,101 @@
+@media (min-width:700px) {
+
+    main {
+        padding: 5%;
+    }
+
+    /* ------------ 
+    SKILLS SECTION 
+    --------------*/
+    .proskill-box {
+        justify-content: space-between;
+
+        div {
+            width: 30%;
+            background-color: $cardColor;
+        }
+    }
+
+
+    /* ------------- 
+    EDUCATION SECTION 
+    --------------- */
+    .education {
+        h2 {
+            font-size: $fonth2Tablet;
+        }
+
+        >div {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 40px;
+        }
+
+        article {
+            justify-content: space-evenly;
+            width: 42%;
+            height: 35vh;
+            padding: 2% 3% 2% 3%;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    /* ------------ 
+    CONTACT SECTION
+    ------------- */
+    .contact {
+        h2 {
+            font-size: $fonth2Tablet;
+        }
+
+        p {
+            font-size: $fontSizeTablet;
+            padding: 3% 7%;
+        }
+
+        form {
+            row-gap: 20px;
+        }
+
+        label {
+            font-size: $fontSizeTablet;
+        }
+
+        input,
+        textarea {
+            font-size: $fontSizeTablet;
+        }
+
+        [type="submit"] {
+            font-size: 24px;
+        }
+    }
+
+    /* ------------ 
+    FOOTER
+    ------------- */
+    footer {
+        row-gap: 30px;
+        padding-top: 0;
+
+        div>a {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    footer ul {
+        column-gap: 5%;
+
+        a {
+            font-size: 20px;
+        }
+    }
+}

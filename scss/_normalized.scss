@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $fontFamily;
+    background-color: $mainColor;
+    color: $fontColor;
+
+}
+
+main {
+    padding: 7%;
+}
+
+section {
+    padding: 12% 0;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+
+}
+
+a {
+    color: $fontColor;
+}

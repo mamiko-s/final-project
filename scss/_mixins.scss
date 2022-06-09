@@ -1,0 +1,22 @@
+@mixin flexColumnMobile($rowGap) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: $rowGap;
+}
+
+@mixin flexRowMobile($colGap) {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: $colGap;
+}
+
+
+@mixin logoPicture($url:"/img/bunkyo.png") {
+    background-image: url($url);
+    background-size: $size;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 5vh;
+    padding: 2%;
+}
