@@ -4,15 +4,49 @@
         padding: 5%;
     }
 
+    h2 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 8% 0;
+    }
+
+
     /* ------------ 
     SKILLS SECTION 
     --------------*/
+    .skills {
+
+        .softskill-box {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        ul {
+            row-gap: 18px;
+        }
+
+        .softskill-box>p {
+            width: 50%;
+            font-size: 18px;
+        }
+    }
+
+
+
     .proskill-box {
         justify-content: space-between;
+        width: 65vw;
 
         div {
             width: 30%;
             background-color: $cardColor;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
         }
     }
 
@@ -21,9 +55,7 @@
     EDUCATION SECTION 
     --------------- */
     .education {
-        h2 {
-            font-size: $fonth2Tablet;
-        }
+        padding-top: 5%;
 
         >div {
             flex-direction: row;
@@ -36,7 +68,7 @@
             justify-content: space-evenly;
             width: 42%;
             height: 35vh;
-            padding: 2% 3% 2% 3%;
+            padding: 0% 3% 2% 3%;
         }
 
         h3 {
@@ -48,9 +80,6 @@
     CONTACT SECTION
     ------------- */
     .contact {
-        h2 {
-            font-size: $fonth2Tablet;
-        }
 
         p {
             font-size: $fontSizeTablet;
@@ -68,10 +97,12 @@
         input,
         textarea {
             font-size: $fontSizeTablet;
+            height: 4vh;
         }
 
         [type="submit"] {
             font-size: 24px;
+            height: 5vh;
         }
     }
 

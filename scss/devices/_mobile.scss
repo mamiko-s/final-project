@@ -241,14 +241,19 @@
             @include flexColumnMobile(12px);
         }
 
-        .education_title {
+        .education_title_1,
+        .education_title_2,
+        .education_title_3,
+        .education_title_4,
+        .education_title_5,
+        .education_title_6 {
             text-align: center;
             padding-bottom: 3%;
             border-bottom: 1px dashed $fontColor;
             width: 100%;
         }
 
-        .education_title:nth-child(1)>aside {
+        .education_title_1>aside {
             background-image: url(/img/bunkyo.png);
             background-position: center;
             background-repeat: no-repeat;
@@ -257,7 +262,7 @@
 
         }
 
-        .education_title:nth-child(2)>aside {
+        .education_title_2>aside {
             background-image: url(/img/osu.png);
             background-position: center;
             background-repeat: no-repeat;
@@ -266,7 +271,7 @@
             width: 100%;
         }
 
-        .education_title:nth-child(3)>aside {
+        .education_title_3>aside {
             background-image: url(/img/web_creator.png);
             background-position: center;
             background-repeat: no-repeat;
@@ -275,8 +280,26 @@
             width: 100%;
         }
 
-        .education_title:nth-child(4)>aside {
-            background-image: url(/img/osu.png);
+        .education_title_4>aside {
+            background-image: url(/img/toeic.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 10vh;
+            width: 100%;
+        }
+
+        .education_title_5>aside {
+            background-image: url(/img/world_heritage.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 10vh;
+            width: 100%;
+        }
+
+        .education_title_6>aside {
+            background-image: url(/img/secretary.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;

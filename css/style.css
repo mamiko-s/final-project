@@ -375,20 +375,25 @@ a {
             align-items: center;
     row-gap: 12px;
   }
-  .education .education_title {
+  .education .education_title_1,
+  .education .education_title_2,
+  .education .education_title_3,
+  .education .education_title_4,
+  .education .education_title_5,
+  .education .education_title_6 {
     text-align: center;
     padding-bottom: 3%;
     border-bottom: 1px dashed #078080;
     width: 100%;
   }
-  .education .education_title:nth-child(1) > aside {
+  .education .education_title_1 > aside {
     background-image: url(/img/bunkyo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     height: 10vh;
   }
-  .education .education_title:nth-child(2) > aside {
+  .education .education_title_2 > aside {
     background-image: url(/img/osu.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -396,7 +401,7 @@ a {
     height: 10vh;
     width: 100%;
   }
-  .education .education_title:nth-child(3) > aside {
+  .education .education_title_3 > aside {
     background-image: url(/img/web_creator.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -404,8 +409,24 @@ a {
     height: 10vh;
     width: 100%;
   }
-  .education .education_title:nth-child(4) > aside {
-    background-image: url(/img/osu.png);
+  .education .education_title_4 > aside {
+    background-image: url(/img/toeic.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10vh;
+    width: 100%;
+  }
+  .education .education_title_5 > aside {
+    background-image: url(/img/world_heritage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10vh;
+    width: 100%;
+  }
+  .education .education_title_6 > aside {
+    background-image: url(/img/secretary.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -559,23 +580,50 @@ a {
   main {
     padding: 5%;
   }
+  h2 {
+    font-size: 34px;
+  }
+  section {
+    padding: 8% 0;
+  }
   /* ------------ 
     SKILLS SECTION 
     --------------*/
+  .skills .softskill-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .skills ul {
+    row-gap: 18px;
+  }
+  .skills .softskill-box > p {
+    width: 50%;
+    font-size: 18px;
+  }
   .proskill-box {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 65vw;
   }
   .proskill-box div {
     width: 30%;
     background-color: #fffffe;
+    text-align: center;
+  }
+  .proskill-box p {
+    text-align: center;
   }
   /* ------------- 
     EDUCATION SECTION 
     --------------- */
-  .education h2 {
-    font-size: 34px;
+  .education {
+    padding-top: 5%;
   }
   .education > div {
     -webkit-box-orient: horizontal;
@@ -595,7 +643,7 @@ a {
             justify-content: space-evenly;
     width: 42%;
     height: 35vh;
-    padding: 2% 3% 2% 3%;
+    padding: 0% 3% 2% 3%;
   }
   .education h3 {
     font-size: 18px;
@@ -603,9 +651,6 @@ a {
   /* ------------ 
     CONTACT SECTION
     ------------- */
-  .contact h2 {
-    font-size: 34px;
-  }
   .contact p {
     font-size: 20px;
     padding: 3% 7%;
@@ -619,9 +664,11 @@ a {
   .contact input,
   .contact textarea {
     font-size: 20px;
+    height: 4vh;
   }
   .contact [type="submit"] {
     font-size: 24px;
+    height: 5vh;
   }
   /* ------------ 
     FOOTER
